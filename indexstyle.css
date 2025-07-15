@@ -1,0 +1,563 @@
+	
+	html{
+        overflow-x: hidden;        
+    }
+
+    body{
+		margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+	}
+
+	.navdiv{
+		display: flex;
+		width: 100%;
+		height: 100px;
+        margin: 0;
+        max-width: 1020px;
+	 }
+
+     @media (max-width: 600px) {
+        .navdiv{
+            max-width: 100%;
+        }
+     }
+
+     .header{
+        position: relative;
+        display: flex;
+        width: 100%;
+        top:0;
+        background-color: rgb(181, 201, 209); 
+     }
+
+	.navdiv ul{
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+        align-items: start;
+		top: 0;
+		z-index: 3;
+	}
+	
+	 .navdiv li{
+        list-style: none;
+		font-family: "museo-sans-rounded", sans-serif;
+		margin: 20px;
+		align-items: right;
+		z-index: 2;
+	}
+	.navdiv a{
+		text-decoration: none;
+		color: black;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.navdiv a:hover{
+		color: white;
+	}
+
+	.intro{
+		width: 100%;
+		height: auto;
+		display: flex;
+        flex-direction: row;
+		align-items: center;
+		justify-content: center;
+        background-color: antiquewhite;
+	}
+
+     @media (max-width: 430px) {
+        .biotext{
+            width: 100%;
+            border: 30px;
+            padding: 40px;
+        }
+     }
+
+	.biotext{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+		text-decoration: none;
+		color: rgb(181, 201, 209);
+		font-family: "museo-sans-rounded", sans-serif;
+		font-weight: 700;
+		font-style: italic;
+        border: 10px;
+        padding: 30px;
+	}
+
+    #bio a{
+        font-size: 35px;
+		text-decoration: none;
+        color: rgba(0, 0, 0, 0.813);
+		font-family: "museo-sans-rounded", sans-serif;
+		font-weight: 700;
+		font-style: italic;
+    }
+
+	#bio{
+		display: flex;
+        flex-direction: row;
+        align-items: center;
+		justify-content: space-between;
+		text-align: start;
+        border-radius: 30px;
+        background-color: white;
+        padding: 20px;
+	}
+
+     @media (max-width: 430px) {
+        #bio{
+            width: 100%;
+            border-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+     }
+
+        .intro .biotext #bio{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .2s ease-in-out;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+        }
+
+        .intro .biotext #bio:hover{
+            transform: scale(1.1);
+        }
+
+        .intro img{
+            transition: .2s ease-in-out;
+            filter: drop-shadow(0px 5px 15px rgba(0,0,0,0.1));
+            max-width: 200px;
+            max-height: 200px;
+        }
+
+	.headings{
+		font-weight: bold;
+		font-family: "museo-sans-rounded", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+        color: black;
+		display: flex;
+		flex-direction: row;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+	}
+
+	#subtext{
+		font-size: 20px;
+		text-align:justify;
+		text-justify:inter-word;
+        max-width: 900px;
+        padding: 20px;
+	}
+
+.projects{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+		justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    @media (max-width:900px){
+        .projects{
+            max-width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: start;
+        }
+    }
+
+  .introtogd{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    .introtogdtext{
+        color: black;
+        width: 100%;
+        opacity:0;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .introtogd:hover .introtogdimage{
+        opacity: 50%;
+        color: black;
+    }
+
+    .introtogd:hover .introtogdtext{
+        opacity: 100%;
+        z-index: 10;
+    }
+
+    a.introtogdtext{
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-family: "museo-sans-rounded", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+    .introtogdimage:hover{
+        opacity: 30%;
+    }
+    .introtogdimage{
+        position: relative;
+    }
+
+        .projects .introtogd .introtogdimage{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .2s ease-in-out;
+        }
+
+        .projects .introtogd .introtogdimage:hover{
+            transform: scale(1.1);
+        }
+
+        .projects .introtogd .introtogdimage{
+            border-radius: 50px;
+            height: 290px;
+            width: 290px;
+            object-fit: cover;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+
+    .sloped{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    .slopedtext{
+        color: black;
+        width: 100%;
+        opacity:0;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sloped:hover .slopedimage{
+        opacity: 50%;
+        color: black;
+    }
+
+    .sloped:hover .slopedtext{
+        opacity: 100%;
+        z-index: 10;
+    }
+
+    a.slopedtext{
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: "museo-sans-rounded", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+    .slopedimage:hover{
+        opacity: 30%;
+    }
+    .slopedimage{
+        position: relative;
+    }
+
+        .projects .sloped .slopedimage{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .2s ease-in-out;
+        }
+
+        .projects .sloped .slopedimage:hover{
+            transform: scale(1.1);
+        }
+
+        .projects .sloped .slopedimage{
+            border-radius: 50px;
+            height: 290px;
+            width: 290px;
+            object-fit: cover;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+    .CU{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    .CUtext{
+        color: black;
+        width: 100%;
+        opacity:0;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CU:hover .CUimage{
+        opacity: 50%;
+        color: black;
+    }
+
+    .CU:hover .CUtext{
+        opacity: 100%;
+        z-index: 10;
+    }
+
+    a.CUtext{
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: "museo-sans-rounded", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+    .CUimage:hover{
+        opacity: 30%;
+    }
+    .CUimage{
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+        .projects .CU .CUimage{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .2s ease-in-out;
+        }
+
+        .projects .CU .CUimage:hover{
+            transform: scale(1.1);
+        }
+
+        .projects .CU .CUimage{
+            border-radius: 50px;
+            height: 290px;
+            width: 290px;
+            object-fit: cover;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+    .honeybunches{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    .honeybunchestext{
+        color: black;
+        width: 100%;
+        opacity:0;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .honeybunches:hover .honeybunchesimage{
+        opacity: 50%;
+        color: black;
+    }
+
+    .honeybunches:hover .honeybunchestext{
+        opacity: 100%;
+        z-index: 10;
+    }
+
+    a.honeybunchestext{
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: "museo-sans-rounded", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+    .honeybunchesimage:hover{
+        opacity: 30%;
+    }
+    .honeybunchesimage{
+        position: relative;
+    }
+
+        .projects .honeybunches .honeybunchesimage{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .2s ease-in-out;
+        }
+
+        .projects .honeybunches .honeybunchesimage:hover{
+            transform: scale(1.1);
+        }
+
+        .projects .honeybunches .honeybunchesimage{
+            border-radius: 50px;
+            height: 290px;
+            width: 290px;
+            object-fit: cover;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+    .wonder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    .wondertext{
+        color: black;
+        width: 100%;
+        opacity:0;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wonder:hover .wonderimage{
+        opacity: 50%;
+        color: black;
+    }
+
+    .wonder:hover .wondertext{
+        opacity: 100%;
+        z-index: 10;
+    }
+
+    a.wondertext{
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: "museo-sans-rounded", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+    .wonderimage:hover{
+        opacity: 30%;
+    }
+    .wonderimage{
+        position: relative;
+    }
+    
+        .projects .wonder .wonderimage{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .2s ease-in-out;
+        }
+
+        .projects .wonder .wonderimage:hover{
+            transform: scale(1.1);
+        }
+
+        .projects .wonder .wonderimage{
+            border-radius: 50px;
+            height: 290px;
+            width: 290px;
+            object-fit: cover;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+    .darktext{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    a.darktext{
+        color: black;
+        position: absolute;
+    }
+
+	.content{
+    text-decoration: none;
+    color: black;
+	font-family: "museo-sans-rounded", sans-serif;
+	font-weight: 500;
+    font-weight: bold;
+    font-size: 20px;
+	background-color: rgb(181, 201, 209);
+	position: relative;
+    display: flex;
+	align-items: end;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100px;
+    }
+
+	.content a{
+		font-family: "museo-sans-rounded", sans-serif;
+		font-weight: 500;
+		font-style: normal;
+		text-decoration: none;
+		color: black;
+		font-size: 20px;
+		font-weight: bold;
+		margin-right: 50px;
+        justify-content: space-between;
+	}
+
+	.content a:hover{
+		color:white;
+	}
+
+	.content li{
+        display: flex;
+		align-items: center;
+        justify-content: space-between;
+	}
+
+    .content p{
+        border: 10px;
+        padding-left: 20px;
+    }
+
+		/*header.modify .navdiv{
+			transition-duration: .3s;
+			opacity: 30%;
+		}/*
