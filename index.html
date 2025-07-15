@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+	<title>Abby Elise Design</title>
+	<link rel="stylesheet" href="indexstyle.css">
+	<link rel="stylesheet" href="https://use.typekit.net/heo0shb.css">
+</head>
+
+<body>
+
+	<section id="top"></section>
+	
+	<div class="header">
+		<div class="navdiv">
+			<ul>
+				<li><a href="index.html"><li style="font-style: italic;">Abby Elise Design</li></a></li>
+				<li><a href="about.html">about</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="intro">
+		<div class="biotext">
+			<p id="bio">
+				<img src="images/head-bold-small.png">
+				<a href="about.html">Hello, my name is Abby! I'm currently a design student studying at the University of Illinois at Urbana-Champaign.
+			</a></p>
+		</div>
+	</div>
+
+		<div class="headings">
+				<p id="subtext">Below are examples of my work,
+					complete with a glimpse into the process of creating each.
+					Many of the projects were created in response to a problem,
+					and involved research and ideation to determine the best design solution. </p>
+		</div>
+
+	<div class="projects">
+		<div class="introtogd">
+					<a href="introtogd.html"; class="introtogdtext darktext">fundamentals of graphic design</a>
+
+				<div class="introtogdimage">
+					<a href="introtogd.html";><img src="images/introtogd-noborder.jpg"/></a>
+				</div>
+		</div>
+		<div class="sloped">
+				<a href="sloped.html"; class="slopedtext darktext">sloped</a>
+
+			<div class="slopedimage">
+				<a href="sloped.html";><img src="images/sloped-noborder.jpg"/></a>
+			</div>
+		</div>
+		<div class="CU">
+				<a href="CUsecondhand.html"; class="CUtext darktext">CUsecondhand</a>
+				
+				<div class="CUimage">
+					<a href="CUsecondhand.html";><img src="images/CUsecondhand-noborder.png"/></a>
+				</div>
+		</div>
+		<div class="honeybunches">
+				<a href="honeybunches.html"; class="honeybunchestext darktext">honey bunches of oats</a>
+
+			<div class="honeybunchesimage">
+				<a href="honeybunches.html";><img src="images/honeybunches-noborder.png"/></a>
+			</div>
+		</div>
+		<div class="wonder">
+				<a href="wonder.html"; class="wondertext darktext">wonder</a>
+
+			<div class="wonderimage">
+				<a href="wonder.html";><img src="images/wonder-noborder.png"/></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<p>@2025 Abby Jacobs</p>
+			<ul>
+				<li>
+				<a href="http://www.linkedin.com">linkedin</a>
+				<a href="mailto:aej7@illinois.edu">email</a>
+				</li>
+			</ul>	
+	</div>
+
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){ 
+			var header = document.querySelector("header")
+			header.classList.toggle("modify",window.scrollY>0);
+		}
+		)
+	</script>
+
+	<script>
+        document.querySelectorAll('.imgcontainer img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup').style.display = 'block';
+                document.querySelector('.popup img').src = image.getAttribute('src')
+            }
+        }); 
+
+        document.querySelector('.popup span').onclick = () =>{
+            document.querySelector('.popup').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

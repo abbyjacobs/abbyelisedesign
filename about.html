@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf8"/>
+		<title>About</title>
+		<link rel="stylesheet" href="aboutstyle.css">
+		<link rel="stylesheet" href="https://use.typekit.net/heo0shb.css">
+	</head>
+
+<body>
+	<section id="top"></section>
+	<div class="header">
+		<div class="navdiv">
+			<ul>
+				<li><a href="index.html"><li style="font-style: italic;">Abby Elise Design</li></a></li>
+				<li><a href="about.html">about</a></li>
+			</ul>
+		</div>
+	</div>	
+
+	<div class="intro">
+		<div class="container1">
+			<div class="imgcontainer1">
+				<div class="image"><img src="images/profile-photo-smallest.jpg"></div>
+			</div>
+		</div>
+			<div class="contacttext">
+				<p id="title">Hello!</p>
+				<p id="subtext">My name is Abby,
+					and I'm a design student studying Graphic Design at the University of Illinois at Urbana-Champaign.
+					I was introduced to the world of graphic design at the beginning of high school and have been immersed ever since.
+					I'm currently growing in my design proficiency through classwork and personal projects and have developed a 
+					love for layout design and typography. Below is my resume and ways to contact me.</p>
+			</div>
+	</div>
+
+	<div class="container">
+		<div class="contact">
+			<p id="connect">let's connect!</p>
+			<p id="contact">abigailelise4805@gmail.com</p>
+			<p id="contact">630-297-3220</p>
+		</div>
+        <div class="imgcontainer">
+            <div class="image"><img src="images/resume-medium.png"></div>
+		</div>
+	</div>
+
+			<div class="content">
+				<p>@2025 Abby Jacobs</p>
+					<ul>
+						<li>
+						<a href="http://www.linkedin.com">linkedin</a>
+						<a href="mailto:aej7@illinois.edu">email</a>
+						</li>
+					</ul>	
+			</div>
+
+<script type="text/javascript">
+	window.addEventListener("scroll", function(){
+		var header = document.querySelector("header")
+		header.classList.toggle("modify",window.scrollY>0);
+	}
+	)
+
+	<script>
+        document.querySelectorAll('.imgcontainer img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup').style.display = 'block';
+                document.querySelector('.popup img').src = image.getAttribute('src')
+            }
+        });
+
+        document.querySelector('.popup span').onclick = () =>{
+            document.querySelector('.popup').style.display = 'none';
+        }
+</script>
+</body>
+</html>

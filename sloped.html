@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sloped</title>
+    <link rel="stylesheet" href="slopedstyle.css"/>
+	<link rel="stylesheet" href="https://use.typekit.net/heo0shb.css">
+</head>
+
+<body>
+    <section id="top"></section>
+    <div class="header">
+		<div class="navdiv">
+			<ul>
+				<li><a href="index.html"><li style="font-style: italic;">Abby Elise Design</li></a></li>
+				<li><a href="about.html">about</a></li>
+			</ul>
+		</div>
+	</div>
+
+<div class="text">
+	<p id="title">Sloped</p>
+	<p id="subtext">
+        <span style="font-style: italic;" > Sloped</span>
+        is a typeface inspired by the ski slopes of Breckenridge, Colorado.
+        A city of recreation, play, and nature, Breckenridge is defined by vintage charm and modern fun.
+        Sloped mimics these qualities through its sans serif identity and exaggerated end points. 
+    </p>
+</div>
+
+<div class="type">
+    <div class="img-type">
+        <div class="image"><img src="slopedimages/sloped-typeface.jpg"></div>
+    </div>    
+</div>
+<div class="textbody">
+	<p id="title">Research and Sketches</p>
+	<p id="subtext">
+        The project began with researching the history of Breckenridge as a mining town turned recreational spot.
+        The history, downtown signs, and the surrounding nature
+        inspired a classic feel that incorporated more playful serifs.
+        Initial sketches experimented with best ways to incorporate curvature and
+        playfulness while still maintaining a classic serif look.
+    </p>
+</div>
+<div class="container">
+        <div class="slider-box">
+            <div class="slider">
+                <img id="slide-1" src="slopedimages/sloped-sketches.jpg"/>
+                <img id="slide-2" src="slopedimages/sloped-printtest.jpg"/>
+            </div>
+        </div>
+</div>
+<div class="textbody">
+	<p id="title">Final Products</p>
+	<p id="subtext">
+        The final typeface was transformed into a poster and a booklet.
+        The poster continues to mimick the movement of the mountain slopes
+        with cascading letters, and the booklet illustrates the story
+        of the typeface.
+    </p>
+</div>
+
+<div class="typeposter">
+    <div class="img-type">
+    <div class="image"><img src="slopedimages/sloped-poster-smaller.jpg"></div>
+</div>
+</div>
+
+<div class="container">
+    <div class="slider-box">
+        <div class="slider">
+            <img id="slide-1" src="slopedimages/sloped-front.jpg"/>
+            <img id="slide-2" src="slopedimages/sloped-spread1.jpg"/>
+            <img id="slide-2" src="slopedimages/sloped-spread2.jpg"/>
+            <img id="slide-2" src="slopedimages/sloped-spread3.jpg"/>
+        </div>
+    </div>
+
+<div class="space">
+</div>    
+
+</body>
+
+</div>
+    <script>
+        document.querySelectorAll('.imgcontainer img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup').style.display = 'block';
+                document.querySelector('.popup img').src = image.getAttribute('src')
+            }
+        });
+
+        document.querySelector('.popup span').onclick = () =>{
+            document.querySelector('.popup').style.display = 'none';
+        }
+    </script>
+</div>
+
+	<div class="content">
+		<p>@2025 Abby Jacobs</p>
+			<ul>
+				<li>
+				<a href="http://www.linkedin.com">linkedin</a>
+				<a href="mailto:aej7@illinois.edu">email</a>
+				</li>
+			</ul>	
+	</div>
+
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header")
+        header.classList.toggle("modify",window.scrollY>0);
+    }
+    )
+</script>
+</body>
+</html>

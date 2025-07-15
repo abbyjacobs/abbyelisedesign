@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentals of Graphic Design</title>
+    <link rel="stylesheet" href="styleintrotogd.css"/>
+	<link rel="stylesheet" href="https://use.typekit.net/heo0shb.css">
+</head>
+<body>
+    <section id="top"></section>
+ <div class="header">
+		<div class="navdiv">
+			<ul>
+				<li><a href="index.html"><li style="font-style: italic;">Abby Elise Design</li></a></li>
+				<li><a href="about.html">about</a></li>
+			</ul>
+		</div>
+	</div>
+
+<div class="introtogdheader">
+	<p id="title">Fundamentals of Graphic Design</p>
+	<p id="subtext">
+        <span style="font-style: italic;" > The Fundamentals of Graphic Design </span>
+        is a compilation of design projects from the course of a semester.
+        The compilation took the form of a hand-bound series of three books containing color boards, story boards,
+        and a typographic facsimile.
+        The sections of the book are labelled as COLOR, COMM, and BOOK.
+    </p>
+</div>
+
+<div class="firstimage">
+    <div class="img1">
+        <div class="image"><img src="introimages/turning.jpg"></div>
+    </div>   
+</div>
+
+<div class="commtext">
+    <p id="title">COLOR</p>
+    <p id="subtext">
+        COLOR is an experiment in color theory exploring
+        hue, value, saturation, temperature, and complements.
+    </p>
+</div>    
+<section class="container">
+        <div class="slider-box0">
+            <div class="slider0">
+                <img id="slide-1" src="introimages/hue.jpg" alt="Gundam"/>
+                <img id="slide-2" src="introimages/value.jpg"/>
+                <img id="slide-3" src="introimages/saturation.jpg"/>
+                <img id="slide-3" src="introimages/temperature.jpg"/>
+                <img id="slide-3" src="introimages/complements.jpg"/>
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+</section>
+
+<div class="commtext">
+	<p id="title">COMM</p>
+	<p id="subtext">
+        COMM focuses on visual storytelling.
+        How can we use minimal shapes to tell a narrative?
+        Convey emotion? An assortment of children's tales, songs, and poems were chosen
+        to create the storyboards below.
+    </p>
+</div>
+
+<body>
+    <div class="containerg">
+        <div class="imgcontainer">
+            <div class="image"><img src="introimages/light-small2.jpg"></div>
+            <div class="image"><img src="introimages/lion-small2.jpg"></div>
+            <div class="image"><img src="introimages/bird-small2.jpg"></div>
+            <div class="image"><img src="introimages/night-small2.jpg"></div>
+        </div>
+            <div class="popup">
+                <span>&times;</span>
+                <img src="slide/image1.jpg">
+            </div>
+        <div class="commpara">
+            <p id="subtext">
+                The far left story is based on the song
+                "Leave A Light On" by Chris Renzema, 
+                the inner left is The Lion and The Mouse from Aesop's Fables,
+                the inner right is "A Bird is a Thing With Feathers" by Emily Dickinson,
+                and the far right is "Midday Sun" by lighthearted.
+            </p>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.imgcontainer img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup').style.display = 'block';
+                document.querySelector('.popup img').src = image.getAttribute('src')
+            }
+        }); 
+
+        document.querySelector('.popup span').onclick = () =>{
+            document.querySelector('.popup').style.display = 'none';
+        }
+    </script>
+
+<div class="booktext">
+    <p id="title">BOOK</p>
+    <p id="subtext">
+        BOOK was made up of two central elements: the facsimile below, and the final, printed book with each work.
+        The facsimile below is based off of pages 38 and 39 of Bringhurst's <span style="font-style: italic">The Elements of Typographic Style</span>.
+    </p>
+</div>
+<div class="firstimage">
+    <div class="img1">
+        <div class="image"><img src="images/BOOKsmall3.jpg"></div>
+    </div>   
+</div>
+
+<section class="containerfinal">
+    <div class="slider-box">
+        <div class="slider">
+            <img id="slide-1" src="introimages/coverflat.jpg" alt="Gundam"/>
+            <img id="slide-2" src="introimages/bookmark.jpg"/>
+            <img id="slide-3" src="introimages/spread.jpg"/>
+            <img id="slide-3" src="introimages/firstpage.jpg"/>
+            <img id="slide-3" src="introimages/turning.jpg"/>
+        </div>
+    </div>
+</section>
+
+	<div class="content">
+		<p>@2025 Abby Jacobs</p>
+			<ul>
+				<li>
+				<a href="http://www.linkedin.com">linkedin</a>
+				<a href="mailto:aej7@illinois.edu">email</a>
+				</li>
+			</ul>	
+	</div>
+
+</body>
+
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header")
+        header.classList.toggle("modify",window.scrollY>0);
+    }
+    )
+</script>
+</body>
+</html>
