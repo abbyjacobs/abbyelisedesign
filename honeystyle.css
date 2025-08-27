@@ -151,6 +151,8 @@
     max-width: 40rem;
     margin: 0 auto;
     margin-top: 0px;
+    gap: 30px;
+    padding: 50px;
 }
 .slider{
     display: flex;
@@ -191,8 +193,11 @@
 }
 .slider-box1{
     position: relative;
-    max-width: 30rem;
+    max-width: 40rem;
     margin: 0 auto;
+    margin-top: 0px;
+    gap: 30px;
+    padding: 50px;
 }
 .slider1{
     display: flex;
